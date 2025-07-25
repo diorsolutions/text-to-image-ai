@@ -1,0 +1,17 @@
+{
+  "name": "text-to-image-ai-tool",
+  "version": "1.0.0",
+  "description": "Fully functionality ai app using vanilla js",
+  "homepage": "https://github.com/diorsolutions/text-to-image-ai#readme",
+  "bugs": {
+    "url": "https://github.com/diorsolutions/text-to-image-ai/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diorsolutions/text-to-image-ai.git"
+  },
+  "license": "ISC",
+  "author": "Diorsolutions",
+  "type": "commonjs",
+  "main": "index.js"
+}

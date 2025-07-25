@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Text to Image Generator using JavaScript</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo-wrapper">
+          <div class="logo">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <h1>AI Image Generator</h1>
+        </div>
+
+        <button class="theme-toggle">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </header>
+
+      <div class="main-content">
+        <form class="form prompt-form">
+          <div class="prompt-container">
+            <textarea
+              placeholder="lorem ipsum emit..."
+              required
+              autofocus
+              class="prompt-input"
+            ></textarea>
+            <button type="button" class="prompt-btn">
+              <i class="fa-solid fa-dice"></i>
+            </button>
+          </div>
+          <div class="prompt-actions">
+            <div class="select-wrapper" required>
+              <select class="custom-select">
+                <option value="">Choose mode</option>
+                <option value="black-forest-labs/FLUX.1-dev">FLUX.1-dev</option>
+                <option value="black-forest-labs/FLUX.1-schnell">
+                  FLUX.1-schnell
+                </option>
+                <option value="stabilityai/stable-diffusion-x1-base-1">
+                  Stable Duffusion XL
+                </option>
+                <option value="runwayml/stable-diffusion-v1-5">
+                  stable-diffusion-v1.5
+                </option>
+                <option value="prompthero/openjourney">Open Journey</option>
+              </select>
+            </div>
+            <div class="select-wrapper" required>
+              <select class="custom-select">
+                <option value="" selected disabled>Image Count</option>
+                <option value="1">1-image</option>
+                <option value="2">2-image</option>
+                <option value="3">3-image</option>
+                <option value="4">4-image</option>
+              </select>
+            </div>
+            <div class="select-wrapper" required>
+              <select class="custom-select">
+                <option value="" selected disabled>Set Ratio</option>
+                <option value="1/1">Square (1:1)</option>
+                <option value="16/9">LandScape (16:9)</option>
+                <option value="9/16">Portrait (9:16)</option>
+              </select>
+            </div>
+            <button type="submit" class="generate-btn">
+                <i class="fa-solid fa-wand-sparkles"></i>
+                Generate
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
