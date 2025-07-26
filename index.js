@@ -5,10 +5,9 @@ const themeToggle = document.querySelector(".theme-toggle"),
   promptForm = document.querySelector(".prompt-form"),
   modelSelect = document.getElementById("model-select"),
   countSelect = document.getElementById("count-select"),
-  
   ratioSelect = document.getElementById("ratio-select");
 
-const HF_TOKEN = "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";
+const HF_TOKEN = process.env.HF_TOKEN;
 const examplePrompts = [
   "A magic forest with glowing plants and fairy homes among giant mushrooms",
   "An old steampunk airship floating through golden clouds at sunset",
