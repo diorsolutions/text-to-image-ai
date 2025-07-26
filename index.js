@@ -5,6 +5,7 @@ const themeToggle = document.querySelector(".theme-toggle"),
   promptForm = document.querySelector(".prompt-form"),
   modelSelect = document.getElementById("model-select"),
   countSelect = document.getElementById("count-select"),
+  
   ratioSelect = document.getElementById("ratio-select");
 
 const HF_TOKEN = "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";
