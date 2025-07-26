@@ -27,6 +27,7 @@
 
       <div class="main-content">
         <form class="form prompt-form">
+          <!-- start prompt-container -->
           <div class="prompt-container">
             <textarea
               placeholder="lorem ipsum emit..."
@@ -38,6 +39,9 @@
               <i class="fa-solid fa-dice"></i>
             </button>
           </div>
+          <!-- ended prompt-container -->
+
+          <!-- start prompt-actions  -->
           <div class="prompt-actions">
             <div class="select-wrapper" required>
               <select class="custom-select">
@@ -73,9 +77,50 @@
               </select>
             </div>
             <button type="submit" class="generate-btn">
-                <i class="fa-solid fa-wand-sparkles"></i>
-                Generate
+              <i class="fa-solid fa-wand-sparkles"></i>
+              Generate
             </button>
+          </div>
+          <!-- ended prompt-actions -->
+
+          <!-- Start gallery grid: Result image section -->
+          <div class="gallery-grid">
+            <div class="img-card loading">
+              <div class="status-container">
+                <div class="spinner"></div>
+                <p class="status-text">Generating...</p>
+              </div>
+              <img class="result-img" width="220" src="./assets/test.png" alt="Generated Image" />
+              <div class="img-overlay">
+                <div class="button img-download-btn">
+                  <i class="fa-solid fa-download"></i>
+                </div>
+              </div>
+            </div>
+            <div class="img-card">
+              <img width="220" src="./assets/test.png" alt="Generated Image" />
+              <div class="img-overlay">
+                <div class="button img-download-btn">
+                  <i class="fa-solid fa-download"></i>
+                </div>
+              </div>
+            </div>
+            <div class="img-card">
+              <img width="220" src="./assets/test.png" alt="Generated Image" />
+              <div class="img-overlay">
+                <div class="button img-download-btn">
+                  <i class="fa-solid fa-download"></i>
+                </div>
+              </div>
+            </div>
+            <div class="img-card">
+              <img width="220" src="./assets/test.png" alt="Generated Image" />
+              <div class="img-overlay">
+                <div class="button img-download-btn">
+                  <i class="fa-solid fa-download"></i>
+                </div>
+              </div>
+            </div>
           </div>
         </form>
       </div>
