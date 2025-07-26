@@ -44,7 +44,7 @@
           <!-- start prompt-actions  -->
           <div class="prompt-actions">
             <div class="select-wrapper" required>
-              <select class="custom-select">
+              <select class="custom-select" id="model-select">
                 <option value="">Choose mode</option>
                 <option value="black-forest-labs/FLUX.1-dev">FLUX.1-dev</option>
                 <option value="black-forest-labs/FLUX.1-schnell">
@@ -60,7 +60,7 @@
               </select>
             </div>
             <div class="select-wrapper" required>
-              <select class="custom-select">
+              <select class="custom-select" id="count-select">
                 <option value="" selected disabled>Image Count</option>
                 <option value="1">1-image</option>
                 <option value="2">2-image</option>
@@ -69,7 +69,7 @@
               </select>
             </div>
             <div class="select-wrapper" required>
-              <select class="custom-select">
+              <select class="custom-select" id="ratio-select">
                 <option value="" selected disabled>Set Ratio</option>
                 <option value="1/1">Square (1:1)</option>
                 <option value="16/9">LandScape (16:9)</option>
@@ -84,46 +84,11 @@
           <!-- ended prompt-actions -->
 
           <!-- Start gallery grid: Result image section -->
-          <div class="gallery-grid">
-            <div class="img-card loading">
-              <div class="status-container">
-                <div class="spinner"></div>
-                <p class="status-text">Generating...</p>
-              </div>
-              <img class="result-img" width="220" src="./assets/test.png" alt="Generated Image" />
-              <div class="img-overlay">
-                <div class="button img-download-btn">
-                  <i class="fa-solid fa-download"></i>
-                </div>
-              </div>
-            </div>
-            <div class="img-card">
-              <img width="220" src="./assets/test.png" alt="Generated Image" />
-              <div class="img-overlay">
-                <div class="button img-download-btn">
-                  <i class="fa-solid fa-download"></i>
-                </div>
-              </div>
-            </div>
-            <div class="img-card">
-              <img width="220" src="./assets/test.png" alt="Generated Image" />
-              <div class="img-overlay">
-                <div class="button img-download-btn">
-                  <i class="fa-solid fa-download"></i>
-                </div>
-              </div>
-            </div>
-            <div class="img-card">
-              <img width="220" src="./assets/test.png" alt="Generated Image" />
-              <div class="img-overlay">
-                <div class="button img-download-btn">
-                  <i class="fa-solid fa-download"></i>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="gallery-grid"></div>
         </form>
       </div>
     </div>
+
+    <script src="./index.js"></script>
   </body>
 </html>
