@@ -7,7 +7,7 @@ const themeToggle = document.querySelector(".theme-toggle"),
   countSelect = document.getElementById("count-select"),
   ratioSelect = document.getElementById("ratio-select");
 
-const HF_TOKEN = process.env.HF_TOKEN;
+const HF_TOKEN = "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";
 const examplePrompts = [
   "A magic forest with glowing plants and fairy homes among giant mushrooms",
   "An old steampunk airship floating through golden clouds at sunset",
